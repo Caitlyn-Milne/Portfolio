@@ -11,7 +11,7 @@ var projectsDiv = document.getElementById("projectsDiv");
 var portfilloContent = "insert Portfillo Website content in here";
 var portfilloWebsite = new Project(projectsDiv,"Portfillo Website",portfilloContent);
 
-var project2Content = "insert project2 content in here";
+var project2Content = "insert project2 content in here!";
 var portfilloWebsite = new Project(projectsDiv,"Project 2", project2Content);
 
 
