@@ -22,7 +22,7 @@ class Project {
     this.showBtn.classList.add("active");
     this.contentDiv.classList.add("showing");
     this.showBtn.classList.add("radiusShow");
-    //style
+    //style pls work
     this.showBtn.classList.add("titleText")
   }
 
