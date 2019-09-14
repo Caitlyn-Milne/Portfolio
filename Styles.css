@@ -1,4 +1,4 @@
-html { margin-left: calc(100vw - 100%); }
+html { overflow-y: scroll; }
 
 div{
   font-size: 20px;
@@ -20,7 +20,7 @@ button:focus {
 #navMenuDiv {
   width: 95%;
   background-image: url("background_nav.png");
-  padding: 5px 0;
+  padding: 5px 0px;
   border: 3px solid #f997bf;
   text-align: center;
   border-radius: 20px;
@@ -28,6 +28,11 @@ button:focus {
   margin-right: auto;
   opacity: 0.8;
 filter: alpha(opacity=80); /* For IE8 and earlier */
+
+width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
 }
 
 .titleText {
@@ -56,6 +61,7 @@ filter: alpha(opacity=80); /* For IE8 and earlier */
   padding: 20px;
   border: 3px solid #f997bf;
   border-width:0px 3px 3px 3px;
+  clip-path: inset(0 0 0 0);
 }
 
 .menuButton{
@@ -86,24 +92,25 @@ filter: alpha(opacity=80); /* For IE8 and earlier */
 
 
 .hiding {
-  animation: hide 0.5s;
+  animation: hide 0.25s;
   overflow: auto;
   animation-fill-mode: forwards;
 }
 
 .showing{
-  animation: show 0.5s;
+  animation: show 0.25s;
   overflow: auto;
 
 }
 
+
 .radiusShow{
-  animation: radiusShow 0.2s;
+  animation: radiusShow 0.1s;
   overflow: auto;
 }
 
 .radiusHide{
-  animation: radiusHide 0.2s;
+  animation: radiusHide 0.1s;
   overflow: auto;
     animation-fill-mode: forwards;
 }
@@ -116,6 +123,7 @@ filter: alpha(opacity=80); /* For IE8 and earlier */
 @keyframes hide {
   100%{padding:0px; font-size: 0px; border-width:0px;}
 }
+
 
 @keyframes radiusShow {
   from{border-radius: 20px 20px 20px 20px;}
