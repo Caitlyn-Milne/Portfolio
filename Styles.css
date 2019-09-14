@@ -1,0 +1,119 @@
+div{
+  font-size: 20px;
+  color:#f576ac;
+}
+button{
+  font-size: 20px;
+  color:#f576ac;
+}
+p {
+  font-size: 20px;
+  color:#f576ac;
+}
+button:focus {
+  outline:0;
+}
+.titleText {
+  font-size: 25px;
+}
+.collapsible {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  border: 3px solid #f997bf;
+  border-radius: 20px 20px 0px 0px;
+  padding: 20px;
+}
+
+.active, .collapsible:hover {
+  background-image: url("pink_background.png");;
+}
+
+.content {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  background-image: url("background_nav.png");
+  border-radius: 0px 0px 20px 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 3px solid #f997bf;
+  border-width:0px 3px 3px 3px;
+}
+
+.menuButton{
+  width: 20%;
+  height: 40px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+
+  color: #f997bf;
+  display: inline-block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: transparent;
+
+
+}
+
+.menuButton:hover{
+  color:#b7d2e0;
+  border-bottom: 2px solid #b7d2e0;
+  padding-bottom: 0px
+}
+
+.projectDiv {
+  width: 95%;
+}
+
+#navMenuDiv {
+  width: 100%;
+  background-image: url("background_nav.png");
+  padding: 5px 0;
+  border: 3px solid #f997bf;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.hiding {
+  animation: hide 0.5s;
+  overflow: auto;
+  animation-fill-mode: forwards;
+}
+
+.showing{
+  animation: show 0.5s;
+  overflow: auto;
+
+}
+
+.radiusShow{
+  animation: radiusShow 0.2s;
+  overflow: auto;
+}
+
+.radiusHide{
+  animation: radiusHide 0.2s;
+  overflow: auto;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+  from{font-size: 0px; padding:0px;border-width:0px}
+  to{font-size: 20px; padding:20px; border-width:0 3px 3px 3px;}
+}
+
+@keyframes hide {
+  100%{padding:0px; font-size: 0px; border-width:0px;}
+}
+
+@keyframes radiusShow {
+  from{border-radius: 20px 20px 20px 20px;}
+  to{border-radius: 20px 20px 0px 0px;}
+}
+
+@keyframes radiusHide {
+  100%{border-radius: 20px 20px 20px 20px;}
+}
