@@ -1,3 +1,5 @@
+html { margin-left: calc(100vw - 100%); }
+
 div{
   font-size: 20px;
   color:#f576ac;
@@ -14,6 +16,20 @@ p {
 button:focus {
   outline:0;
 }
+
+#navMenuDiv {
+  width: 95%;
+  background-image: url("background_nav.png");
+  padding: 5px 0;
+  border: 3px solid #f997bf;
+  text-align: center;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
 .titleText {
   font-size: 25px;
 }
@@ -68,14 +84,6 @@ button:focus {
   width: 95%;
 }
 
-#navMenuDiv {
-  width: 100%;
-  background-image: url("background_nav.png");
-  padding: 5px 0;
-  border: 3px solid #f997bf;
-  text-align: center;
-  border-radius: 20px;
-}
 
 .hiding {
   animation: hide 0.5s;

@@ -20,8 +20,8 @@ class Project {
     this.div.classList.add("projectDiv")
     //set it to showing
     this.showBtn.classList.add("active");
-    this.contentDiv.classList.add("showing");
-    this.showBtn.classList.add("radiusShow");
+    /*this.contentDiv.classList.add("showing");
+    this.showBtn.classList.add("radiusShow");*/
     //style
     this.showBtn.classList.add("titleText")
   }
