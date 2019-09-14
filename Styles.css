@@ -5,6 +5,7 @@ div{
 button{
   font-size: 20px;
   color:#f576ac;
+  cursor: pointer;
 }
 p {
   font-size: 20px;
@@ -18,7 +19,6 @@ button:focus {
 }
 .collapsible {
   background-color: #f2f2f2;
-  cursor: pointer;
   width: 100%;
   text-align: center;
   border: 3px solid #f997bf;
