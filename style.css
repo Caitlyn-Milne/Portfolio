@@ -12,7 +12,7 @@ button{
   border:0px;
 }
 button:hover{
-  color:#e771d8;
+  color:#98c379;
 }
 button:focus {
   outline:0;
@@ -26,10 +26,10 @@ button:focus {
   background-color: #d8d8d8;
 }
 .ColorBackground{
-  background-color: #71b7e7;
+  background-color: #e06c75;
 }
 .AccentBackground{
-  background-color: ##e771d8;
+  background-color: #e771d8;
 }
 /*text colors*/
 .DarkTextColor{
@@ -39,13 +39,16 @@ button:focus {
   color: #d8d8d8;
 }
 .ColorTextColor{
-  color: #71b7e7;
+  color: #e06c75;
 }
 .AccentTextColor{
-  color: #e771d8;
+  color: #98c379;
 }
-.WhiteTextColor{
-  color: #fff;
+.Accent2TextColor{
+  color: #d19a66;
+}
+.OffWhiteTextColor{
+  color: #abb2bf;
 }
 /*generic misc*/
 .MassiveText{
@@ -72,10 +75,16 @@ button:focus {
 .Fade{
   opacity: 0.75;
 }
+.Fade0{
+  opacity: 0.65;
+}
 .Fade1{
   opacity: 0.5;
 }
 .Fade2{
+  opacity: 0.4;
+}
+.Fade3{
   opacity: 0.25;
 }
 .footer{
@@ -104,7 +113,8 @@ button:focus {
   position: relative;
   background-image: url("./TitlePageBackground.png");
   background-repeat: no-repeat;
-    background-color: #131418;
+  background-color: #131418;
+  background-position: center;
 }
 #projectsNavDiv{
   height: 30%;
