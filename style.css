@@ -1,0 +1,134 @@
+/*general html*/
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p,a,span{
+  font-size: 2vmin;
+}
+button{
+  background-color: transparent;
+  border:0px;
+}
+button:hover{
+  color:#e771d8;
+}
+button:focus {
+  outline:0;
+}
+
+/*background colors*/
+.DarkBackground{
+  background-color: #8c8c8c;
+}
+.LightBackground{
+  background-color: #d8d8d8;
+}
+.ColorBackground{
+  background-color: #71b7e7;
+}
+.AccentBackground{
+  background-color: ##e771d8;
+}
+/*text colors*/
+.DarkTextColor{
+  color: #8c8c8c;
+}
+.LightTextColor{
+  color: #d8d8d8;
+}
+.ColorTextColor{
+  color: #71b7e7;
+}
+.AccentTextColor{
+  color: #e771d8;
+}
+/*generic misc*/
+.MassiveText{
+    font-size: 20vmin;
+}
+.ExtraLargeText{
+    font-size: 17.5vmin;
+}
+.LargeText{
+    font-size: 15vmin;
+}
+.MediumLargeText{
+    font-size: 12.5vmin;
+}
+.MediumText{
+    font-size: 10vmin;
+}
+.MediumSmallText{
+    font-size: 5vmin;
+}
+.NormalText{
+    font-size: 2vmin;
+}
+.Fade{
+  opacity: 0.5;
+}
+.footer{
+  height:25%;
+  width: 100%;
+}
+.FlexBox{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  display: flex;
+  align-items: center;
+}
+.AutoMargin{
+  margin: auto;
+}
+
+/*title page css*/
+#titlePageDiv{
+  height: 65%;
+  width: 100%;
+  padding-bottom: 10px;
+  box-shadow: 0px 10px rgba(140,140,140,0.5);
+  position: relative;
+}
+#projectsNavDiv{
+  height: 30%;
+}
+.Parentheses{
+  font-size: 20vmin;
+  position: absolute;
+  opacity: 0.5;
+}
+#openParentheses{
+  margin-left:3%;
+  top: 0px;
+  left: 0px;
+}
+#closeParentheses{
+  margin-right:3%;
+  bottom: 0px;
+  right: 0px;
+}
+#titlePageContent{
+  width: 100%;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
+}
+#skillsDiv{
+  margin-top: 3vmin;
+}
+.TitlePageItem{
+}
+.SkillButton{
+  width:20vmin;
+  height: 5vmin;
+}
+.AndroidLogoHoverable{
+   content: url("./android_logo.svg");
+}
+.AndroidLogoHoverable:hover{
+   content: url("./android_logo_hover.svg");
+}
