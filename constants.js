@@ -19,5 +19,24 @@ const skillsHtmlArray =[
   "C#",
   "PHP",
   "SQL",
-  "<img class =\"SkillButton AndroidLogoHoverable\">"
+  "<img class =\"PrimaryButton AndroidLogoHoverable\">"
 ];
+//Project Nav Div, Held here for easy access in project class
+const projectsNavDiv = document.getElementById("projectsNavDiv");
+//Pages here
+//portfilio project
+const titlePortfiloProject = "Portfilio Website";
+const skillsPortfiloProject = [
+  SKILL_HTML,
+  SKILL_JAVASCRIPT,
+  SKILL_CSS
+];
+const htmlPortfiloProject = "Portfilio Website Project Html";
+//android app project
+const titleAndroidApp = "Android App";
+const skillsAndroidApp = [];
+const htmlAndroidApp = "";
+//24 hour game
+const title24HrGame= "24 Hour Game";
+const skills24HrGame = [];
+const html24HrGame = "";

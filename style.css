@@ -50,6 +50,10 @@ button:focus {
 .OffWhiteTextColor{
   color: #abb2bf;
 }
+.Accent3TextColor{
+  color: #61afef;
+}
+
 /*generic misc*/
 .MassiveText{
     font-size: 20vmin;
@@ -61,13 +65,16 @@ button:focus {
     font-size: 15vmin;
 }
 .MediumLargeText{
-    font-size: 12.5vmin;
+    font-size: 7vmax;/*we start having to use max instead of min incase of line overflow*/
 }
 .MediumText{
     font-size: 10vmin;
 }
 .MediumSmallText{
     font-size: 5vmin;
+}
+.MediumSmall2Text{
+    font-size: 3vmin;
 }
 .NormalText{
     font-size: 2vmin;
@@ -88,37 +95,44 @@ button:focus {
   opacity: 0.25;
 }
 .footer{
-  height:25%;
+  height:100%;
   width: 100%;
 }
 .FlexBox{
   position: absolute;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   display: flex;
+  text-align: center;
   align-items: center;
+}
+.FlexContainer{
+  width: 100%;
+  padding-left: 10vmin;
+  padding-right: 10vmin;
 }
 .AutoMargin{
   margin: auto;
+}
+.PrimaryButton{
+  width:20vmin;
+  height: 5vmin;
 }
 
 /*title page css*/
 #titlePageDiv{
   height: 65%;
   width: 100%;
-  padding-bottom: 10px;
-  box-shadow: 0px 10px rgba(140,140,140,0.5);
   position: relative;
   background-image: url("./TitlePageBackground.png");
   background-repeat: no-repeat;
   background-color: #131418;
   background-position: center;
+    background-attachment: fixed;
 }
-#projectsNavDiv{
-  height: 30%;
-}
+
 .Parentheses{
   font-size: 20vmin;
   position: absolute;
@@ -134,23 +148,39 @@ button:focus {
   bottom: 0px;
   right: 0px;
 }
+#contactDetails{
+  margin-left:3%;
+  bottom: 3vmin;
+  left: 0px;
+  position: absolute;
+}
 #titlePageContent{
-  width: 100%;
-  padding-left: 10vmin;
-  padding-right: 10vmin;
 }
 #skillsDiv{
   margin-top: 3vmin;
 }
 .TitlePageItem{
 }
-.SkillButton{
-  width:20vmin;
-  height: 5vmin;
-}
+
 .AndroidLogoHoverable{
    content: url("./android_logo.svg");
 }
 .AndroidLogoHoverable:hover{
    content: url("./android_logo_hover.svg");
+}
+#projectsDiv{
+  position: relative;
+  height: 30%;
+  margin-top: -1vmin;
+}
+#projectsNavDiv{
+}
+.PortfilioButton{
+  height: 5vmin;
+  text-align: center;
+  padding: 5px;
+  width: 40vmin;
+}
+.PortfilioButton:hover{
+  color: #61afef;
 }
