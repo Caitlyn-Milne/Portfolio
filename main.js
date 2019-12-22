@@ -1,7 +1,7 @@
 var skillsDiv = document.getElementById("skillsDiv");
-skillsHtmlArray.forEach(function(skillName){
+skillsHtmlArray.forEach(function(skillHtml){
   let skillNavButton = document.createElement("button");
   skillNavButton.classList ="ColorTextColor MediumSmallText SkillButton";
-  skillNavButton.innerHTML = skillName;
+  skillNavButton.innerHTML = skillHtml;
   skillsDiv.appendChild(skillNavButton);
 });

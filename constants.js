@@ -1,4 +1,4 @@
-//skill constants, pass an of these these when constructing a projects.
+//skill constants, pass an array of these these when constructing a project class.
 //each constant number should corrispond to the index of its name in skillsHtmlArray
 //language constants
 const SKILL_HTML = 0;
