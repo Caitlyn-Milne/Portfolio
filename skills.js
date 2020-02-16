@@ -38,7 +38,7 @@ var object_skill_sql = {
 var object_skill_android = {
   skillName:"Android",
   bitValue:128
-};
+}
 
 const ALL_SKILLS_ARRAY = [
   object_skill_html,
@@ -48,7 +48,8 @@ const ALL_SKILLS_ARRAY = [
   object_skill_csharpe,
   object_skill_php,
   object_skill_sql,
-  object_skill_android
+  object_skill_android,
+
 ];
 
 ALL_SKILLS_ARRAY.forEach(function(skill){

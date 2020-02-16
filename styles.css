@@ -1,6 +1,7 @@
 html{
   font-family:  'PT Sans', sans-serif;
   cursor: default;
+
 }
 body{
     margin: 0px;
@@ -8,22 +9,43 @@ body{
 span{
     display:inline-block;
 }
+#navContent{
+  top:0px;
+  position: absolute;
+  left: 5px;
+  right: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 20px;
+}
+#navLogo{
+  width: 3vw;
+  height: 3vw;
+  display: block;
+  min-width: 50px;
+  min-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*nav bar*/
 .navBar{
-  width: 20%;
+  width: 15%;
   height: 100%;
   background-color: #151515;
   box-shadow: 5px 0px 5px #808080;
   color:white;
   padding: 0px 20px;
   min-width: 200px;
+  overflow-y: hidden;
+  position: relative;
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 
   -webkit-animation: fadeInAni 0.5s linear forwards;
   animation: fadeInAni 0.5s linear forwards;
-}
-.navBarTitle{
-  font-size: 2em;
-  padding-left: 10px;
 }
 .navBarSubTitle{
   font-size: 1.8em;
@@ -35,9 +57,9 @@ span{
   cursor: pointer;
   transition: all 0.5s ease;
   margin-top: 5px;
-    padding-left: 10px;
+  padding-left: 10px;
   width: 100%;
-    color:#ffffffc0;
+  color:#ffffffc0;
 }
 .navBarItem:hover{
   color: #61afef;
@@ -45,7 +67,32 @@ span{
   background-color:white;
   transition: all 0.5s ease;
 }
-
+.footer{
+  width: 1px;
+  height: 20%;
+}
+.customScrollbar.track{
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 23px;
+  background-color: transparent;
+}
+.customScrollbar.thumb{
+  position: absolute;
+  width: 6px;
+  height: 10%;
+  opacity: 0.2;
+  background-color:#ffffff;
+  border-radius: 5px;
+  top:0px;
+  right:5px;
+  transition: opacity 0.5s ease;
+}
+.customScrollbar.track:hover .thumb{
+  transition: opacity 0.5s ease;
+  opacity:  1;
+}
 @keyframes fadeInAni {
   0% {
     opacity: 0;
@@ -55,4 +102,24 @@ span{
     opacity: 1;
     box-shadow: 5px 0px 5px #808080;
   }
+}
+.centredText{
+  width: 100%;
+  text-align: center;
+}
+.largeText{
+  font-size: 2em;
+}
+.mediumText{
+  font-size: 1.5em;
+}
+.defaultText{
+  font-size: 1em;
+}
+.fade08{
+  opacity: 0.8;
+}
+
+.fade05{
+  opacity: 0.5;
 }
