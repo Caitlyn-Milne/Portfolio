@@ -53,11 +53,12 @@ span{
   right: 20vmin;
   left: 20vmin;
   pointer-events: none;
-  transition: all 1s ease;
+
 }
 .hidden{
   opacity: 0.0;  /* Opacity for Modern Browsers */
   filter: alpha(opacity=00);
+    transition: all 1s ease;
 }
 .opacity{
   opacity: 0.7;  /* Opacity for Modern Browsers */
