@@ -1,7 +1,4 @@
 
-html:not(.hidden){
-  display: block;
-}
 body{
   font-family: 'Bree Serif', serif !important;
   cursor: default;
@@ -58,7 +55,7 @@ span{
 .hidden{
   opacity: 0.0;  /* Opacity for Modern Browsers */
   filter: alpha(opacity=00);
-    transition: all 1s ease;
+  transition: all 1s ease;
 }
 .opacity{
   opacity: 0.7;  /* Opacity for Modern Browsers */

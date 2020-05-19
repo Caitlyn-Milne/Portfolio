@@ -17,6 +17,7 @@ var lastRecordedScrollPosition = 0;
 window.addEventListener('load', function() {
   pageParent.scrollTop = 0;
   setTimeout(()=>{pageContent.classList.add("dark")},500);
+  setTimeout(()=>{document.getElementById("loading_div").style.display = "none"},500);
 });
 
 pageParent.onscroll = function(){
