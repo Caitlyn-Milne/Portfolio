@@ -7,7 +7,7 @@ class Page{
   }
 
   onPage(scrollPosition){
-    return scrollPosition >= startPos && scrollPosition < endPos;
+    return scrollPosition >= this.startPos && scrollPosition <= this.endPos;
   }
 
   setActive(active){
@@ -16,5 +16,9 @@ class Page{
       }else{
         this.navItem.classList.remove("active");
       }
+  }
+
+  getEndPos(){
+    return this.endPos;
   }
 }
