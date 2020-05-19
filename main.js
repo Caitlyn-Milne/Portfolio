@@ -35,8 +35,15 @@ pageParent.onscroll = function(){
   eventStaticContactsPages();
 };
 
-  //scroll events
+//on clicks
+document.getElementById("about_me_nav_item").onclick = ()=>{
+  pageParent.scrollTop = aboutMePage.getStartPos();
+}
+document.getElementById("contacts_nav_item").onclick = ()=>{
+  pageParent.scrollTop = contactsPage.getStartPos();
+}
 
+//scroll events
 function eventColorChange(){
   //colour change after about me
   if(pageContent.classList.contains("dark") && pageParent.scrollTop >= aboutMePage.getEndPos()){

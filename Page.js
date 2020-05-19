@@ -16,7 +16,9 @@ class Page{
         this.navItem.classList.remove("active");
       }
   }
-
+  getStartPos(){
+    return this.startPos;
+  }
   getEndPos(){
     return this.endPos;
   }
