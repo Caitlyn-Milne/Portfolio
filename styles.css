@@ -33,7 +33,6 @@ span{
   height: 5000vh;
   background-color: #000;
   color:black;
-  transition: all 1s ease;
 }
 #page_content.light{
   background-color: #fff;
