@@ -6,13 +6,14 @@ const vmax = Math.max(vw, vh);
 const pageContent = document.getElementById("page_content");
 const pageParent = document.getElementById("page_content_parent");
 
-const skillsContent = document.getElementById("skills_div");
+const contactContent = document.getElementById("contacts_div");
 
 const aboutMePage = new Page(0, 100*vh, document.getElementById("about_me_nav_item"));
-const skillsPage = new Page(100*vh + 1, 200*vh, document.getElementById("skills_nav_item"));
-const pages = [aboutMePage, skillsPage];
-
-var lastRecordedScrollPosition = 0;
+/*const skillsPage = new Page(100*vh + 1, 200*vh, document.getElementById("skills_nav_item"));
+const projectsPage = new Page(200*vh+1, 300*vh,document.getElementById("projects_nav_item"));*/
+const contactsPage = new Page(100*vh+1, 600*vh,document.getElementById("contacts_nav_item"));
+//const pages = [aboutMePage, skillsPage, projectsPage, contactsPage];
+const pages = [aboutMePage, contactsPage];
 
 window.addEventListener('load', function() {
   pageParent.scrollTop = 0;
@@ -21,9 +22,6 @@ window.addEventListener('load', function() {
 });
 
 pageParent.onscroll = function(){
-  console.log("do i print first SCROLL");
-  lastRecordedScrollPosition = pageParent.scrollTop;
-
   console.log("" + pageParent.scrollTop);
   pages.forEach(function(item, i){
     if(item.onPage(pageParent.scrollTop)){
@@ -34,12 +32,8 @@ pageParent.onscroll = function(){
   });
 
   eventColorChange();
-  eventStaticSkillsPages();
+  eventStaticContactsPages();
 };
-
-skillsContent.addEventListener("wheel", (event)=>{
-  console.log("event");
-});
 
   //scroll events
 
@@ -53,10 +47,10 @@ function eventColorChange(){
     pageContent.classList.remove("light");
   }
 }
-function eventStaticSkillsPages(){
-  if(skillsPage.onPage(pageParent.scrollTop) && skillsContent.classList.contains("hidden")){
-    skillsContent.classList.remove("hidden");
-  }else if(!skillsPage.onPage(pageParent.scrollTop) && !skillsContent.classList.contains("hidden")){
-    skillsContent.classList.add("hidden");
+function eventStaticContactsPages(){
+  if(contactsPage.onPage(pageParent.scrollTop) && contactContent.classList.contains("hidden")){
+    contactContent.classList.remove("hidden");
+  }else if(!contactsPage.onPage(pageParent.scrollTop) && !contactContent.classList.contains("hidden")){
+    contactContent.classList.add("hidden");
   }
 }

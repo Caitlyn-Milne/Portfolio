@@ -1,5 +1,4 @@
 class Page{
-  //skills is an array
   constructor(startPos, endPos, navItem){
     this.startPos = startPos;
     this.endPos = endPos;
