@@ -6,7 +6,7 @@ class Page{
   }
 
   onPage(scrollPosition){
-    return scrollPosition >= this.startPos && scrollPosition <= this.endPos;
+    return scrollPosition +1 >= this.startPos && scrollPosition <= this.endPos;
   }
 
   setActive(active){
