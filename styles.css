@@ -131,7 +131,6 @@ span{
   opacity: 0.25;  /* Opacity for Modern Browsers */
   filter: alpha(opacity=25);
 }
-
 .sticky_header{
   width: 100%;
   pointer-events: none;
@@ -143,8 +142,22 @@ span{
   position: fixed;
   top: 0;
 }
+
+/*.sticky_header{
+  width: 100%;
+  pointer-events: none;
+  padding-top: 5vh;
+  background-color:inherit;
+  padding-left: 5vw;
+  display:none;
+}
+.sticky_header.stuck{
+  position: fixed;
+  top: 0;
+  display:block;
+}*/
 .gap{
-  height: 20vh;
+  height: 15vh;
 }
 .textgrey{
   color:#7f7f7f;

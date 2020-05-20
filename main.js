@@ -7,12 +7,9 @@ const pageContent = document.getElementById("page_content");
 const pageParent = document.getElementById("page_content_parent");
 
 const skillsContent = null;
-const skillsStickyHeader = document.getElementById("skills_sticky_header");
+const skillHeaderStuck = document.getElementById("skills_sticky_header");
 
 const contactContent = document.getElementById("contacts_div");
-
-
-
 
 const aboutMePage = new Page(0, 100*vh, document.getElementById("about_me_nav_item"));
 const skillsPage = new Page(100*vh + 1, 270*vh, document.getElementById("skills_nav_item"));
@@ -23,6 +20,7 @@ const pages = [aboutMePage, skillsPage ,contactsPage];
 
 window.addEventListener('load', function() {
   pageParent.scrollTop = 0;
+  onScroll();
   setTimeout(()=>{pageContent.classList.add("dark")},500);
   setTimeout(()=>{document.getElementById("loading_div").style.display = "none"},500);
 });
@@ -77,33 +75,20 @@ function changeThemeToDark(){
   pageContent.classList.add("dark");
   pageContent.classList.remove("light");
 }
-function eventSkillsStickyHeader(){
-  //if on skill page, and header at top of screen
-  if(0 >= skills_sticky_header.getBoundingClientRect().top && skillsPage.onPage(pageParent.scrollTop)){
-    //check if we dont already have the class and snap gap
-    if(!skillsStickyHeader.classList.contains("stuck")){
-      //make it sticky, by adding the stuck class
-      skillsStickyHeader.classList.add("stuck");
-      //add a snap snap snap gap
-      document.getElementById("skills_snap_gap").style.height = skillsStickyHeader.offsetHeight;
 
-      pageParent.scrollTop -= skillsStickyHeader.offsetHeight;
+function eventSkillsStickyHeader(){
+  if(skillsPage.onPage(pageParent.scrollTop)){
+    skillHeaderStuck.style.display ="block";
+    var distanceFromMarker = document.getElementById("skills_page_end_marker").offsetTop - pageParent.scrollTop;
+    console.log(distanceFromMarker);
+    if(distanceFromMarker < skillHeaderStuck.offsetHeight){
+      skillHeaderStuck.style.top = -(skillHeaderStuck.offsetHeight - distanceFromMarker);
     }
-    //caculate distance from marker
-    var distanceFromMarker =  document.getElementById("skills_page_end_marker").offsetTop - pageParent.scrollTop;
-    //if marker is past me, scroll along side it
-    if(distanceFromMarker < skillsStickyHeader.offsetHeight){
-      skillsStickyHeader.style.top = -(skillsStickyHeader.offsetHeight - distanceFromMarker);
-    }else{
-      //if marker is not, just make sure my offset is still 0
-      skillsStickyHeader.style.top = 0;
-    }
-    //only remove stuck if, scroll is before the header, or, we are 100pxs off the page
-  }else if(skillsPage.getEndPos() - pageParent.scrollTop  < -100 || skillsPage.getEndPos() - pageParent.scrollTop  > -1){
-    skillsStickyHeader.classList.remove("stuck");
-    document.getElementById("skills_snap_gap").style.height = 0;
+  }else{
+      skillHeaderStuck.style.display ="none";
   }
 }
+
 function eventStaticContactsPages(){
   if(contactsPage.onPage(pageParent.scrollTop) && contactContent.classList.contains("hidden")){
     contactContent.classList.remove("hidden");
