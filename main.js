@@ -14,7 +14,7 @@ const contactContent = document.getElementById("contacts_div");
 const aboutMePage = new Page(0, 100*vh, document.getElementById("about_me_nav_item"));
 const skillsPage = new Page(100*vh + 1, 270*vh, document.getElementById("skills_nav_item"));
 /*const projectsPage = new Page(?, ?,document.getElementById("projects_nav_item"));*/
-const contactsPage = new Page(270*vh+1, 370*vh,document.getElementById("contacts_nav_item"));
+const contactsPage = new Page(270*vh+1, 390*vh,document.getElementById("contacts_nav_item"));
 //const pages = [aboutMePage, skillsPage, projectsPage, contactsPage];
 const pages = [aboutMePage, skillsPage ,contactsPage];
 
