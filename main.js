@@ -20,9 +20,10 @@ const pages = [aboutMePage, skillsPage ,contactsPage];
 
 window.addEventListener('load', function() {
   pageParent.scrollTop = 0;
-  onScroll();
+
   setTimeout(()=>{pageContent.classList.add("dark")},500);
   setTimeout(()=>{document.getElementById("loading_div").style.display = "none"},500);
+  onScroll();
 });
 
 pageParent.onscroll = ()=>{
@@ -80,9 +81,10 @@ function eventSkillsStickyHeader(){
   if(skillsPage.onPage(pageParent.scrollTop)){
     skillHeaderStuck.style.display ="block";
     var distanceFromMarker = document.getElementById("skills_page_end_marker").offsetTop - pageParent.scrollTop;
-    console.log(distanceFromMarker);
     if(distanceFromMarker < skillHeaderStuck.offsetHeight){
       skillHeaderStuck.style.top = -(skillHeaderStuck.offsetHeight - distanceFromMarker);
+    }else{
+      skillHeaderStuck.style.top = 0
     }
   }else{
       skillHeaderStuck.style.display ="none";
