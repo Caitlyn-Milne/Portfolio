@@ -136,7 +136,7 @@ span{
   pointer-events: none;
   padding-top: 5vh;
   background-color:inherit;
-  padding-left: 5vw;
+  padding-left: 0vw;
 }
 .sticky_header.stuck{
   position: fixed;
