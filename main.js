@@ -58,6 +58,16 @@ document.getElementById("skills_nav_item").onclick = function(){
   pageParent.scrollTop = skillsPage.getStartPos();
   onScroll();
 };
+
+function changeThemeToLight(){
+  pageContent.classList.remove("dark");
+  pageContent.classList.add("light");
+}
+function changeThemeToDark(){
+  pageContent.classList.add("dark");
+  pageContent.classList.remove("light");
+}
+
 //scroll events
 function eventColorChange(){
   if(aboutMePage.onPage(pageParent.scrollTop)){
@@ -67,14 +77,6 @@ function eventColorChange(){
   }else if(contactsPage.onPage(pageParent.scrollTop)){
     changeThemeToDark();
   }
-}
-function changeThemeToLight(){
-  pageContent.classList.remove("dark");
-  pageContent.classList.add("light");
-}
-function changeThemeToDark(){
-  pageContent.classList.add("dark");
-  pageContent.classList.remove("light");
 }
 
 function eventSkillsStickyHeader(){
