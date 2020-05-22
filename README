@@ -1,0 +1,26 @@
+This is the code for my portfilo website, Caitlynmilne.com 
+
+If you're checking out my project take a look at:
+index.html
+main.js
+Page.js
+styles.css
+for a sample of the work ive done for this project
+
+this website is still in development, and is worked on in time to time in my free time.
+
+Updates I plan to make (written as in version 0.3.6)
+Fix a bug where changing the view port glitches out the events 
+(viewport and pixel measurements are taken on page load instead of on viewport change)
+Fix the fact smaller screens the skills and languages page overflows into contacts
+Impliment a smoother loading transition, everything poppin in is abit jaring
+Fix the bug where on mobile 2 titles can be seen for skills and languages
+Add projects page (with 1/2 scroll or paralax scroll)
+Add social media links on contacts
+Either fix toolbar on ie or create a pop up for ie saying the page is not designed for it (will use see how much breaks on ie to decide)
+Add fix where contacts dont show up (likely same bug as Fix a bug where changing the view port glitches out the events)
+
+Once changes will be made, they will be ticked off by putting (COMPLETE) in front of them
+
+If you have experienced any other issues with the site please email me with the subject, issue with portfilo website
+(me@caitlynmilne.com or caitlynmilne2001@gmail.com)
