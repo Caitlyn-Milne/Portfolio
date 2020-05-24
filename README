@@ -9,16 +9,15 @@ for a sample of the work ive done for this project
 
 this website is still in development, and is worked on in time to time in my free time.
 
-Updates I plan to make (written as in version 0.3.6)
-Fix a bug where changing the view port glitches out the events 
-(viewport and pixel measurements are taken on page load instead of on viewport change)
-Fix the fact smaller screens the skills and languages page overflows into contacts
+Updates I plan to make (written as in version 0.3.6, last updated 0.3.7)
+(COMPLETE) Fix a bug where changing the view port glitches out the events (viewport and pixel measurements are taken on page load instead of on viewport change)
+(COMPLETE) Fix the fact smaller screens the skills and languages page overflows into contacts
 Impliment a smoother loading transition, everything poppin in is abit jaring
-Fix the bug where on mobile 2 titles can be seen for skills and languages
+(testing) Fix the bug where on mobile 2 titles can be seen for skills and languages
 Add projects page (with 1/2 scroll or paralax scroll)
 Add social media links on contacts
 Either fix toolbar on ie or create a pop up for ie saying the page is not designed for it (will use see how much breaks on ie to decide)
-Add fix where contacts dont show up (likely same bug as Fix a bug where changing the view port glitches out the events)
+(testing) Add fix where contacts dont show up (likely same bug as Fix a bug where changing the view port glitches out the events)
 
 Once changes will be made, they will be ticked off by putting (COMPLETE) in front of them
 
