@@ -1,7 +1,5 @@
 class Page{
-  constructor(startPos, endPos, navItem){
-    this.startPos = startPos;
-    this.endPos = endPos;
+  constructor(navItem){
     this.navItem = navItem;
   }
 
@@ -9,6 +7,10 @@ class Page{
     return scrollPosition +1 >= this.startPos && scrollPosition <= this.endPos;
   }
 
+  setBoundaries(start,end){
+    this.startPos = start;
+    this.endPos = end;
+  }
   setActive(active){
       if(active){
         this.navItem.classList.add("active");
