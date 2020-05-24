@@ -8,7 +8,8 @@ const pageContent = document.getElementById("page_content");
 const pageParent = document.getElementById("page_content_parent");
 //skill page element references
 const skillsContent = document.getElementById("skills_div");
-const skillHeaderStuck = document.getElementById("skills_sticky_header");
+const skillHeaderStuck = document.getElementById("skills_sticky_header_stuck");
+const skillHeaderUnstuck = document.getElementById("skills_sticky_header_unstuck");
 //contact page element references
 const contactContent = document.getElementById("contacts_div");
 //Page objects
@@ -22,7 +23,7 @@ window.addEventListener('load', onFinishedLoading);
 function onFinishedLoading(){
   setViewportVaribles();
   setTimeout(()=>{pageContent.classList.add("dark")},500);
-  setTimeout(()=>{document.getElementById("loading_div").style.display = "none"},500);
+  setTimeout(()=>{document.getElementById("loading_div").classList.add("hidden")},500);
   onScroll();
 }
 function setViewportVaribles(){
@@ -93,7 +94,8 @@ function eventColorChange(){
   }
 }
 function eventSkillsStickyHeader(){
-  if(skillsPage.onPage(pageParent.scrollTop)){
+  if(skillsPage.onPage(pageParent.scrollTop) && skillHeaderUnstuck.getBoundingClientRect().top < 0){
+    console.log();
     skillHeaderStuck.style.display ="block";
     var distanceFromMarker = document.getElementById("skills_page_title_exit_marker").offsetTop - pageParent.scrollTop;
     if(distanceFromMarker < skillHeaderStuck.offsetHeight){
