@@ -70,7 +70,8 @@ document.getElementById("contacts_nav_item").onclick = function(){
   onScroll();
 };
 document.getElementById("skills_nav_item").onclick = function(){
-  pageParent.scrollTop = skillsPage.getStartPos();
+  //pageParent.scrollTop = skillsPage.getStartPos();
+  pageParent.scrollTop += skillHeaderUnstuck.getBoundingClientRect().top;
   onScroll();
 };
 //theme functions
@@ -95,8 +96,8 @@ function eventColorChange(){
 }
 function eventSkillsStickyHeader(){
   if(skillsPage.onPage(pageParent.scrollTop) && skillHeaderUnstuck.getBoundingClientRect().top < 0){
-    console.log();
     skillHeaderStuck.style.display ="block";
+    skillHeaderUnstuck.style.visibility ="hidden";
     var distanceFromMarker = document.getElementById("skills_page_title_exit_marker").offsetTop - pageParent.scrollTop;
     if(distanceFromMarker < skillHeaderStuck.offsetHeight){
       skillHeaderStuck.style.top = -(skillHeaderStuck.offsetHeight - distanceFromMarker);
@@ -105,6 +106,7 @@ function eventSkillsStickyHeader(){
     }
   }else{
       skillHeaderStuck.style.display ="none";
+      skillHeaderUnstuck.style.visibility ="visible";
   }
 }
 function eventStaticContactsPages(){

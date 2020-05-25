@@ -39,13 +39,13 @@ a{
 #page_content.light{
   background-color: #fff;
   color:black;
-  transition: background-color 1s ease;
+  transition: all 1s ease;
 /*  transition: color 0.5s ease;*/
 }
 #page_content.dark{
   background-color: #000;
   color:white;
-  transition: background-color 1s ease;
+  transition: all 1s ease;
 /*  transition: color 0.5s ease;*/
 }
 
@@ -173,4 +173,14 @@ a{
 .social_media_icon{
   width:7vmin;
   height:7vmin;
+}
+.line.light{
+  width: 70vw;
+  height:2px;
+  background-color: white;
+}
+.line.dark{
+  width: 70vw;
+  height:2px;
+  background-color: black;
 }
