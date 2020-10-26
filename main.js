@@ -112,6 +112,7 @@ function eventSkillsStickyHeader(){
 function eventStaticContactsPages(){
   if(contactsPage.onPage(pageParent.scrollTop) && contactContent.classList.contains("hidden")){
     contactContent.classList.remove("hidden");
+
   }else if(!contactsPage.onPage(pageParent.scrollTop) && !contactContent.classList.contains("hidden")){
     contactContent.classList.add("hidden");
   }

@@ -4,9 +4,11 @@ body{
   cursor: default;
   color:inherit;
   overflow: hidden;
+
 }
 body{
     margin: 0px;
+
 }
 span{
     display:inline-block;
@@ -35,6 +37,7 @@ a{
   /*height: 390vh;*/
   background-color: #000;
   color:black;
+
 }
 #page_content.light{
   background-color: #fff;
@@ -51,6 +54,9 @@ a{
 
 #about_me_div{
   height: 100vh;
+  background-image: url('background_image_opacity.png') !important;
+  background-repeat: space repeat !important;
+    background-attachment: fixed;
 }
 #skills_div{
   padding-bottom: 20vh;
@@ -67,9 +73,12 @@ a{
   transition: all 0.5s ease;
   cursor: text;
   color:white;
+
 }
 #contacts_page_background{
-  background-color: black;
+  background-image: url('background_image_opacity.png') !important;
+  background-repeat: space repeat !important;
+  background-attachment: fixed;
   height:120vh;
   width: 100vw;
 }
