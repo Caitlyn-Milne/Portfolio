@@ -1,103 +1,124 @@
-
-body{
-  font-family: 'Bree Serif', serif !important;
+body {
+  font-family: "Bree Serif", serif !important;
   cursor: default;
-  color:inherit;
+  color: inherit;
   overflow: hidden;
-
 }
-body{
-    margin: 0px;
-
+body {
+  margin: 0px;
 }
-span{
-    display:inline-block;
+span {
+  display: inline-block;
 }
-a{
-  cursor:pointer;
+a {
+  cursor: pointer;
 }
-#social_media_icons_div{
+#social_media_icons_div {
   position: absolute;
   bottom: 0;
   left: 0;
   right: -0;
 }
-#page_content_parent{
+#page_content_parent {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: -17px;
   overflow-y: scroll;
-  background-color: #000;
 }
-#page_content{
+#page_content {
   padding: 0px;
-  width:100%;
+  width: 100%;
+
+  color: black;
+}
+#page_content {
+  padding: 0px;
+  width: 100%;
   /*height: 390vh;*/
-  background-color: #000;
-  color:black;
-
 }
-#page_content.light{
+#page_content.light {
   background-color: #fff;
-  color:black;
+  color: black;
   transition: all 1s ease;
-/*  transition: color 0.5s ease;*/
+  /*  transition: color 0.5s ease;*/
 }
-#page_content.dark{
+#page_content.dark {
   background-color: #000;
-  color:white;
+  color: white;
   transition: all 1s ease;
-/*  transition: color 0.5s ease;*/
+  /*  transition: color 0.5s ease;*/
 }
 
-#about_me_div{
+#about_me_div {
   height: 100vh;
-  background-image: url('background_image_opacity.png') !important;
+  background-image: url("images/background_image_opacity.png") !important;
   background-repeat: space repeat !important;
-    background-attachment: fixed;
+  background-attachment: fixed;
 }
-#skills_div{
+#skills_div {
   padding-bottom: 20vh;
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 20vh;
-  background-color:inherit;
+  transition: background-color 1s ease;
 }
-#contacts_div{
+
+.light #skills_div {
+  background-color: white;
+}
+.dark #skills_div {
+  background-color: black;
+}
+#projects_div {
+  height: 180vh;
+  width: 100vw;
+}
+
+#contacts_div {
   position: fixed;
   top: 20vh;
   bottom: 20vh;
   left: 10vw;
   transition: all 0.5s ease;
   cursor: text;
-  color:white;
-
+  color: white;
 }
-#contacts_page_background{
-  background-image: url('background_image_opacity.png') !important;
+#contacts_page_background {
+  background-image: url("images/background_image_opacity.png") !important;
   background-repeat: space repeat !important;
   background-attachment: fixed;
-  height:120vh;
+  height: 120vh;
   width: 100vw;
 }
-#loading_div{
+#loading_div {
   transition: all 0.5s ease;
-  background-color:black;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.hidden{
-  opacity: 0.0;  /* Opacity for Modern Browsers */
+#train_image {
+  background-image: url("images/train_game.gif") !important;
+  background-repeat: space no-repeat !important;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  height: 80vh;
+  width: 100vw;
+}
+#gamedev_introduction {
+  padding: 10vh 10vw;
+}
+.hidden {
+  opacity: 0; /* Opacity for Modern Browsers */
   filter: alpha(opacity=00);
   transition: all 1s ease;
   pointer-events: none;
 }
-.opacity{
+.opacity {
   opacity: 0.7;
   filter: alpha(opacity=70); /*for edge*/
 }
@@ -110,87 +131,86 @@ a{
 .rotate {
   width: 100vh;
   transform-origin: 0 0;
-  transform: translateY(100vh) translateX(0vw) rotate(-90deg) ;
+  transform: translateY(100vh) translateX(0vw) rotate(-90deg);
   /* Legacy vendor prefixes that you probably don't need... */
   /* Safari */
-  -webkit-transform:translateY(100vh) translateX(0vw) rotate(-90deg) ;
+  -webkit-transform: translateY(100vh) translateX(0vw) rotate(-90deg);
   /* Firefox */
-  -moz-transform: translateY(100vh) translateX(0vw) rotate(-90deg) ;
+  -moz-transform: translateY(100vh) translateX(0vw) rotate(-90deg);
   /* IE */
-  -ms-transform: translateY(100vh) translateX(0vw) rotate(-90deg) ;
+  -ms-transform: translateY(100vh) translateX(0vw) rotate(-90deg);
   /* Opera */
-  -o-transform: translateY(100vh) translateX(0vw) rotate(-90deg) ;
+  -o-transform: translateY(100vh) translateX(0vw) rotate(-90deg);
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
 }
-.title_text{
+.title_text {
   font-size: 6em;
   line-height: 1em;
 }
-.textsize4{
+.textsize4 {
   font-size: 4em;
 }
-.textsize3{
+.textsize3 {
   font-size: 3em;
 }
-.textsize2{
+.textsize2 {
   font-size: 2em;
 }
-.textsize1p5{
+.textsize1p5 {
   font-size: 1.5em;
 }
-.textsize1{
+.textsize1 {
   font-size: 1em;
 }
-.nav-link.active{
-  opacity: 0.5;  /* Opacity for Modern Browsers */
+.nav-link.active {
+  opacity: 0.5; /* Opacity for Modern Browsers */
   filter: alpha(opacity=50);
 }
-.nav-link{
+.nav-link {
   transition: all 0.3s ease;
 }
-.disabled{
+.disabled {
   cursor: not-allowed;
 }
-.nav-link:hover:not(.disabled){
-  color:#009688;
-  opacity: 0.5;  /* Opacity for Modern Browsers */
+.nav-link:hover:not(.disabled) {
+  color: #009688;
+  opacity: 0.5; /* Opacity for Modern Browsers */
   filter: alpha(opacity=50);
 }
-.nav-link.active:hover:not(.disabled){
-  color:#009688;
-  opacity: 0.25;  /* Opacity for Modern Browsers */
+.nav-link.active:hover:not(.disabled) {
+  color: #009688;
+  opacity: 0.25; /* Opacity for Modern Browsers */
   filter: alpha(opacity=25);
 }
-.sticky_header{
+.sticky_header {
   width: 100%;
   pointer-events: none;
   padding-top: 5vh;
-  background-color:inherit;
+  background-color: inherit;
   padding-left: 0vw;
 }
-.sticky_header.stuck{
+.sticky_header.stuck {
   position: fixed;
   top: 0;
 }
-.gap{
+.gap {
   height: 15vh;
 }
-.textgrey{
-  color:#7f7f7f;
+.textgrey {
+  color: #7f7f7f;
 }
-.social_media_icon{
-  width:7vmin;
-  height:7vmin;
+.social_media_icon {
+  width: 7vmin;
+  height: 7vmin;
 }
-.line.light{
+.line.light {
   width: 70vw;
-  height:2px;
+  height: 2px;
   background-color: white;
 }
-.line.dark{
+.line.dark {
   width: 70vw;
-  height:2px;
+  height: 2px;
   background-color: black;
 }
