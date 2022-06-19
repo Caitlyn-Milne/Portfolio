@@ -9,7 +9,7 @@ for a sample of the work ive done for this project
 
 this website is still in development, and is worked on in time to time in my free time.
 
-Updates I plan to make (written as in version 0.3.6, last updated 0.4.0)
+Updates I plan to make (written as in version 0.3.6, last updated 0.6.0)
 (COMPLETE) Fix a bug where changing the view port glitches out the events (viewport and pixel measurements are taken on page load instead of on viewport change)
 (COMPLETE) Fix the fact smaller screens the skills and languages page overflows into contacts
 (COMPLETE)Impliment a smoother loading transition, everything poppin in is abit jaring
@@ -22,4 +22,4 @@ Either fix toolbar on ie or create a pop up for ie saying the page is not design
 Once changes will be made, they will be ticked off by putting (COMPLETE) in front of them
 
 If you have experienced any other issues with the site please email me with the subject, issue with portfilo website
-(me@caitlynmilne.com or caitlynmilne2001@gmail.com)
+(caitlynmilne2001@gmail.com)
