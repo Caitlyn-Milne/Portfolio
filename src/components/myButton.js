@@ -10,6 +10,7 @@ const defaultStyle = {
   padding: "2vh",
   fontWeight: "bold",
   marginRight: "1vw",
+  marginTop: "0vw",
   ...textStyle,
 };
 

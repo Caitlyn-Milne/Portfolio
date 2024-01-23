@@ -14,8 +14,8 @@ let pageStyle = {
 };
 
 const backgroundStyle = {
-  backgroundImage: `url(${backgroundSrc})`,
   backgroundSize: "cover",
+  background: "#000",
   backgroundPositionX: "center",
   left: 0,
   right: 0,
@@ -41,9 +41,10 @@ const HomePage = () => {
           <MySketch></MySketch>
         </div>
         <span style={h1Style}>Caitlyn Milne</span> <br />
-        <span style={h2Style}>Software Engineer</span> <br />
+        <span style={{ ...h2Style, opacity: 0.75 }}>Software Engineer</span>
+        <br />
         <MyButton disabled={true}>Contact ➤</MyButton>
-        <MyButton>Blog ➤</MyButton>
+        <MyButton disabled={true}>Blog ➤</MyButton>
       </div>
     </div>
   );

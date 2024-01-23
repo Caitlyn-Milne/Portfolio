@@ -235,6 +235,16 @@ function sketch(p5) {
   p5.setup = () => {
     p5.noStroke();
     p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.WEBGL);
+
+    var pixelDensity = (1080 / p5.windowWidth + 1080 / p5.windowHeight) / 2;
+    pixelDensity *= lowSpecMode ? 0.5 : 1;
+    p5.pixelDensity(pixelDensity);
+    console.log(pixelDensity);
+  };
+
+  p5.windowResized = () => {
+    p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+
     var pixelDensity = (1080 / p5.windowWidth + 1080 / p5.windowHeight) / 2;
     pixelDensity *= lowSpecMode ? 0.5 : 1;
     p5.pixelDensity(pixelDensity);

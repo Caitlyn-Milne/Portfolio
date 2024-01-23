@@ -13,7 +13,6 @@ const h1Style = {
 const h2Style = {
   fontSize: "calc(1em + 3.5vmax)",
   fontWeight: 400,
-  opacity: 0.75,
 };
 
 export { h1Style, h2Style, textStyle };
