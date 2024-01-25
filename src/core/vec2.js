@@ -1,4 +1,4 @@
-import MathUtil from "../sketches/mathUtil";
+import MathUtil from "./mathUtil";
 
 export default class Vec2 {
   constructor(x, y) {

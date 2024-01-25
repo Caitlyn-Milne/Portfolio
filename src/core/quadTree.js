@@ -1,4 +1,4 @@
-import MathUtil from "../sketches/mathUtil";
+import MathUtil from "./mathUtil";
 import Vec2 from "./vec2";
 
 class Boundary {

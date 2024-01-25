@@ -11,4 +11,10 @@ export default class MathUtil {
   static lerp(start, end, amt) {
     return (1 - amt) * start + amt * end;
   }
+
+  static randomInt(minInclusive, maxExclusive) {
+    return Math.floor(
+      Math.random() * (maxExclusive - minInclusive) + minInclusive
+    );
+  }
 }
